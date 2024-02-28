@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.contenaire {
+    background-color: rgba(50, 50, 50, 0.5);
+    height: 550px;
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.h1Form{
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::before {
+    content: "";
+    background-image: url(https://www.teahub.io/photos/full/37-377825_2048x1152-anime-wallpaper-background-luxury-all-anime-characters.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.left{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    margin-bottom: 10px;
+}
+.formEmail, .formPassword, .divNewSlater{
+    margin: 10px 0;
+}
+.leftInute{
+    width: 100%;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-left: 30px;
+    border: 3px solid transparent;
+}
+.leftLabel{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.Newslatter{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.newslatterLabel{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+.form{
+    width: 90%;
+    margin-top: 15px;
+}
+.divNewSlater{
+    display: flex;
+}
+.btnDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.btnConnexion{
+    width: 70%;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+#btnReinitialiser{
+    width: 28%;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+#right{
+    width: 384px;
+    background: url(../img/mikulevitation.gif), url(../img/bgSchool.jpg) transparent center no-repeat;
+    background-size: 95%, cover;
+}
+
+.alignement {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* error */
+
+#error{
+    background-image: url(../img/tenple.png);
+    height: 60%;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    padding: 15px;
+    overflow: auto;
+}
+.error{
+    margin-bottom: 20px;
+}
+#errorGif{
+    height: 40%;
+    background-size: cover;
+    background-image: url(../img/grootvener.gif);
+}

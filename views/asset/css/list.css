@@ -1,0 +1,126 @@
+.contenaire{
+    width: 90%;
+    margin: 30px auto;
+}
+.contenaireheader{
+    display: flex;
+}
+.catalogImg{
+    width: 300px;
+    height: 400px;
+}
+.droite{
+    color: white;
+    margin-left: 20px;
+}
+.description{
+    font-size: 40px;
+}
+.ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.ul li{
+    list-style-type: none;
+}
+.likeList{
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+}
+.cataLikeList{
+    color: white;
+}
+
+.btnCollection{
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    /* border: none; */
+}
+.btnCollectionDiv {
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+.collection{
+    width: 98%;
+    padding: 0px 5px 5px 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(52, 52, 52);
+}
+.collectionCard{
+    margin: 10px 0;
+}
+.collectionCard img{
+    width: 190px;
+    height: 280px;
+    display: block;
+}
+table{
+    border-collapse: collapse;
+}
+.tab{
+    color: white;
+    width: 98%;
+    margin: auto;
+    border: none;
+}
+td{
+    vertical-align: middle;
+}
+.tab thead{
+    background-color: rgb(35, 35, 35);
+    height: 45px;
+    font-size: 20px;
+}
+.th0{
+    width: 3%;
+}
+.th1{
+    width: 3%;
+    text-align: center;
+}
+.th2{
+    width: 10%;
+    text-align: center;
+}
+.th3{
+    width: 20%;
+    text-align: center;
+}
+.th4{
+    width: 50%;
+    text-align: center;
+}
+.th5{
+    width: 15%;
+    text-align: center;
+}
+tbody td{
+    height: 50px;
+}
+.impair{
+    background-color: #21242d;
+}
+.paire{
+    background-color: #262830;
+}
+.td4Description{
+    overflow: auto;
+    height: 45px;
+}
+.td3, .td4{
+    padding: 8px;
+}
+.td1, .td2, .td5{
+    text-align: center;
+    margin: 0;
+}
+.td1{
+    transform: scale(1.5);
+}

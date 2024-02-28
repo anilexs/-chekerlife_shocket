@@ -1,0 +1,782 @@
+.navAdminCatalog{
+    color: aqua;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.contenaireRecherche{
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#rechercherCategorie{
+    width: 78%;
+    background-color: #303541;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+
+.addController{
+    display: flex;
+    width: 20%;
+}
+.addCatalog{
+    background-color: greenyellow;
+    width: 100%;
+    border: none;
+    border-right: 2px solid;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.addCatalog:hover{
+    background-color: rgba(172, 255, 47, 0.5);
+}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 180px;
+    height: 280px;
+    border: 3px solid rgb(0, 119, 255);
+    margin: 10px 15px;
+    position: relative;
+}
+
+.cardBrouillonCatalog{
+    width: 180px;
+    height: 280px;
+    border: 3px solid rgb(206, 52, 170);
+    margin: 10px 15px;
+    position: relative;
+}
+
+.cardBrouillon{
+    width: 180px;
+    height: 280px;
+    border: 3px solid rgb(47, 255, 255);
+    margin: 10px 15px;
+    position: relative;
+}
+
+.cardDisable{
+    width: 180px;
+    height: 280px;
+    border: 3px solid red;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.cardNav{
+    background-color: rgb(38, 38, 38);
+    width: 180px;
+    height: 280px;
+    border-radius: 12px;
+    margin: 10px 15px;
+    overflow: auto;   
+}
+
+.cardNavHdr{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border-radius: 11px 11px 0px 0;
+}
+
+.cardNavSpan{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    color: white;
+}
+
+.type{
+    color: white;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.500);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px;
+    font-size: 20px;
+    top: 10px;
+    left: 25px;
+}
+
+/* contenaireType */
+
+.contenaireType{
+    display: flex;
+}
+
+.contenaireSeconderType{
+    background-color: white;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.seconderTypeDiv{
+    margin: 10px;
+}
+.spanTxtType{
+    background-color: #007bff;
+    display: flex;
+}
+.removeType{
+    border: none;
+    background-color: transparent;
+}
+
+/* TypeSeconder */
+.labelTypeSeconder{
+    width: 100%;
+}
+.TypeInputeContenaire{
+    text-align: center;
+}
+#inputeType{
+    display: block;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* add episode */
+.addEpisode button{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 4px 5px;
+    font-size: 17px;
+    top: 25px;
+    left: -9.5px;
+    height: 30px;
+}
+
+/* edite */
+
+.edite button{
+    position: absolute;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid;
+    padding: 5px;
+    font-size: 15px;
+    top: -10px;
+    left: -10px;
+}
+
+.editeBack{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.editeControler{
+    position: fixed;
+    display: flex;
+    right: 4.2%;
+    top: 5.5%;
+    z-index: 50;
+}
+.move, .reload, .close{
+    width: 6vh;
+    height: 3.7vh;
+    font-size: 1.5vh;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.close{
+    border: 0.3vh solid red;
+    color: red;
+}
+
+.reload{
+    border: 0.3vh solid rgb(0, 157, 255);
+    color: rgb(0, 157, 255);
+    margin: 0 15%;
+}
+
+.move{
+    border: 0.3vh solid rgb(64, 255, 0);
+    color: rgb(64, 255, 0);
+}
+
+.formController{
+    display: flex;
+    justify-content: space-around;
+}
+
+.enregistre, .brouillon, .brouillonCatalog, .desactiver, .reactiver{
+    width: 30%;
+    min-width: 78px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.enregistre{
+    background-color: rgb(64, 255, 0);    
+}
+
+.update, .brouillon{
+    width: 45%;
+    min-width: 78px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.update{
+    background-color: rgb(64, 255, 0);    
+}
+.brouillon{
+    background-color: rgb(0, 225, 255);
+}
+
+.brouillonCatalog{
+    background-color: rgb(0, 225, 255);
+}
+
+.desactiver{
+    background-color: red;    
+}
+.reactiver{
+    background-color: rgb(0, 255, 115);    
+}
+
+#description{
+    display: block;
+    width: 80%;
+    max-width: 100%;
+    min-width: 15%;
+    height: 200px;
+}
+#nom{
+    display: block;
+}
+#date{
+    display: block;
+}
+#saison{
+    display: block;
+}
+
+.editeContenaire {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    height: 85%;
+    z-index: 5;
+    background: linear-gradient(to top left, #5A1Df3, #6EECDD);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left{
+    width: 70%;
+    overflow-y: auto;
+}
+.right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.imgCatalogController{
+    background-color: black;
+    height: 12vh;
+    width: 85%;
+    margin: 3vh auto 0 auto;
+}
+.catalogimg{
+    width: 85%;
+    height: 80%;
+    margin: auto;
+    background-size: 100% 100%;
+}
+
+.imgCatalogContener{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* moveBtn */
+#moveBtn{
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    font-size: 30px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 1;
+    height: 70px;
+    width: 70px;
+}
+
+/* exit */
+.exitBack{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.exit{
+    position: fixed;
+    z-index: 6;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    margin-top: 0.7%;
+    background-color: rgb(75, 75, 75);
+    border: 2px solid red;
+}
+.exitTxTContenner{
+    text-align: center;
+    margin: 2%;
+}
+.exitTXT{
+    color: white;
+    font-size: 3vh;
+}
+/* exit controler */
+.exitControler{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.aficher{
+    border-radius: 15px;
+    width: 30%;
+    font-size: 2vh;
+    background-color: white;
+    border: none;
+}
+.rester{
+    border-radius: 15px;
+    width: 30%;
+    font-size: 2vh;
+    background-color: white;
+    border: none;
+}
+.continuer{
+    border-radius: 15px;
+    width: 30%;
+    font-size: 2vh;
+    background-color: white;
+    border: none;
+}
+
+.like{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 28px;
+}
+.activeTrue{
+    color: red;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.activeTrue span{
+    color: white;
+}
+.activeFalse{
+    color: white;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.cataLike{
+    position: absolute;
+    color: black;
+    left: 16px;
+    top: 12px;
+    font-size: 14px;
+}
+
+.page{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.page a{
+    text-decoration: none;
+    color: white;
+}
+.current{
+    color: rgb(63, 63, 255) !important;
+}
+.pagination span{
+    color: white;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.current {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.pagination i {
+    font-size: 18px;
+    margin: 0 4px;
+    color: #333;
+}
+
+.pagination a:hover i {
+    color: #007bff;
+}
+
+.pagination span {
+    margin: 0 4px;
+    color: #333;
+}
+
+/* addEpisode */
+.episodContenaire {
+    position: fixed;
+    width: 90%;
+    height: 85%;
+    z-index: 5;
+    background: linear-gradient(to top left, #5A1Df3, #6EECDD);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+}
+
+.divEpisod{
+    width: 95%;
+    margin: 0 auto;
+    height: min-content;
+    margin-bottom: 25px;
+}
+.hdrEpisod{
+    background-color: red;
+    width: 95%;
+    margin: 50px auto 0 auto;
+    display: flex;
+}
+.hdrEpisod div:nth-child(2){
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.hdrEpisod img{
+    display: block;
+    width: 350px;
+}
+
+.episodeHdr, .episodeBd{
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 3% 0 3% 0;
+}
+
+.episodeHdr span{
+    height: 30px;
+}
+
+.episodeHdr{
+    font-size: 2vh;
+}
+.episodeBd{
+    position: relative;
+    font-size: 2vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background-image: url(../img/bg-ep.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.episodeHdr span, .episodeBd span{
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.episodeHdr span:first-child, .episodeBd span:first-child{
+    background-color: red;
+    width: 7%;
+    z-index: 2;
+}
+
+.episodeBd span:nth-child(2), .episodeHdr span:nth-child(2){
+    background-color: rgb(0, 255, 55);
+    width: 18%;
+    text-align: center;
+    z-index: 3;
+}
+.episodeBd span:nth-child(3), .episodeHdr span:nth-child(3){
+    background-color: rgb(0, 119, 255);
+    width: 30%;
+    z-index: 4;
+}
+.episodeBd span:nth-child(3){
+    word-break: break-all;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 0.5%;
+}
+
+.episodeBd span:nth-child(4), .episodeHdr span:nth-child(4){
+    background-color: rgb(0, 255, 170);
+    width: 15%;
+    z-index: 5;
+}
+
+.episodeBd span:nth-child(5), .episodeHdr span:nth-child(5){
+    background-color: rgb(255, 81, 0);
+    width: 10%;
+    z-index: 6;
+}
+
+.episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+    background-color: rgb(255, 0, 179);
+    width: 7%;
+    z-index: 7;
+}
+
+.episodeBd span:nth-child(7), .episodeHdr span:nth-child(7){
+    background-color: rgb(66, 119, 92);
+    width: 7%;
+    z-index: 8;
+}
+
+.episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+    background-color: rgb(0, 255, 162);
+    width: 6%;
+    z-index: 9;
+}
+.episodeBd span:nth-child(9), .episodeHdr span:nth-child(9){
+    background-color: rgb(149, 0, 255);
+    width: 25%;
+    z-index: 1;
+}
+
+/* .spanTxT1{
+} */
+
+@media only screen and (max-width: 1320px) {
+    .episodeHdr span:first-child, .episodeBd span:first-child{
+        width: 9%;
+    }
+    .episodeBd span:nth-child(4), .episodeHdr span:nth-child(4){
+        width: 18%;
+    }
+    .episodeBd span:nth-child(5), .episodeHdr span:nth-child(5){
+        display: none;
+    }
+    .episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+        width: 8.5%;
+    }
+    .episodeBd span:nth-child(7), .episodeHdr span:nth-child(7){
+        width: 8.5%;
+    }
+    .episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .episodeHdr span:first-child, .episodeBd span:first-child{
+        width: 11%;
+    }
+    .episodeBd span:nth-child(2), .episodeHdr span:nth-child(2){
+        width: 21%;
+    }
+    .episodeBd span:nth-child(3), .episodeHdr span:nth-child(3){
+        width: 36%;
+    }
+    .episodeBd span:nth-child(4), .episodeHdr span:nth-child(4){
+        display: none;
+    }
+    .episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+        width: 11%;
+    }
+    .episodeBd span:nth-child(7), .episodeHdr span:nth-child(7){
+        width: 11%;
+    }
+    .episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .episodeHdr span:first-child, .episodeBd span:first-child{
+        width: 13%;
+    }
+    .episodeBd span:nth-child(3), .episodeHdr span:nth-child(3){
+        width: 38%;
+    }
+    .episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+        width: 15%;
+    }
+    .episodeBd span:nth-child(7), .episodeHdr span:nth-child(7){
+        display: none;
+    }
+    .episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+        width: 13%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .episodeHdr span:first-child, .episodeBd span:first-child{
+        width: 24%;
+    }
+    .episodeBd span:nth-child(2), .episodeHdr span:nth-child(2){
+        width: 35.9%;
+    }
+    .episodeBd span:nth-child(3), .episodeHdr span:nth-child(3){
+        display: none;
+    }
+    .episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+        width: 22%;
+    }
+    .episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .episodeHdr span:first-child{
+        font-size: 70%;
+    }
+    .episodeHdr span:first-child, .episodeBd span:first-child{
+        width: 30%;
+    }
+    .episodeBd span:nth-child(2), .episodeHdr span:nth-child(2){
+        width: 47%;
+    }
+    .episodeBd span:nth-child(6), .episodeHdr span:nth-child(6){
+        display: none;
+    }
+    .episodeBd span:nth-child(8), .episodeHdr span:nth-child(8){
+        width: 23%;
+    }
+}
+
+.fa-arrow-right {
+    transition: transform 0.3s ease;
+}
+
+.rotate-right {
+    transform: rotate(90deg);
+}
+
+.arrowBtn button, .afichageBtnHdr, .brouillonEpBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 3vh;
+}
+.editeEp button{
+    background-color: transparent;
+    border: none;
+    font-size: 2vh;
+}
+.desactiverEp button{
+    background-color: transparent;
+    border: none;
+    font-size: 2vh;
+}
+
+.epDisable{
+    border: 2px solid red;
+}
+
+.txtBdEpisod{
+    margin-right: 15px;
+}
+
+/* @media only screen and (max-width: 1365px) {
+    
+  .editeContenaire{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .left{
+    overflow: visible; 
+    width: 100%;
+  }
+} */
+/* @media only screen and (max-width: 1365px) {
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .imgCatalogController{
+        width: 65%;
+        height: 480px;
+        margin: 25px;
+    }
+    .catalogimg{
+        margin: 15px;
+        width: 380px;
+        height: 480px;
+    }
+    .editeContenaire {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .left {
+        overflow: visible; 
+        width: 100%;
+        order: 2;
+    }
+
+  .right {
+    order: 1;
+  }
+} */
+

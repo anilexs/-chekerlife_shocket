@@ -1,0 +1,116 @@
+.navCatalogue{
+    color: aqua;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.contenaireRecherche{
+    width: 90%;
+    margin: 15px auto;
+}
+#rechercherCategorie{
+    width: 100%;
+    background-color: #303541;
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 180px;
+    height: 280px;
+    border-radius: 12px;
+    margin: 10px 15px;
+    position: relative;
+}
+.like{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 28px;
+}
+.activeTrue{
+    color: red;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.activeTrue span{
+    color: white;
+}
+.activeFalse{
+    color: white;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.cataLike{
+    position: absolute;
+    color: black;
+    left: 16px;
+    top: 12px;
+    font-size: 14px;
+}
+
+.page{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.page a{
+    text-decoration: none;
+    color: white;
+}
+.current{
+    color: rgb(63, 63, 255) !important;
+}
+.pagination span{
+    color: white;
+}
+
+/* Style des liens de la pagination */
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Ajoutez la transition pour la couleur */
+}
+
+/* Style du lien actif */
+.pagination a.current {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+/* Style des flèches */
+.pagination i {
+    font-size: 18px;
+    margin: 0 4px;
+    color: #333;
+}
+
+/* Style des flèches au survol */
+.pagination a:hover i {
+    color: #007bff;
+}
+
+/* Style pour les points de suspension */
+.pagination span {
+    margin: 0 4px;
+    color: #333;
+}

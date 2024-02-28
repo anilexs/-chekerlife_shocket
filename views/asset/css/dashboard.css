@@ -1,0 +1,32 @@
+.navDashboard{
+    color: aqua;
+}
+.hdrcontenaire{
+    display: flex;
+    width: 97%;
+    margin: 15px auto 0px auto;
+    justify-content: space-between;
+}
+.state{
+    width: 36%;
+    background-color: red;
+}
+.hdrGraf{
+    height: 75px;
+}
+#grafTXT{
+    text-align: center;
+    color: white;
+}
+.grafController{
+    display: flex;
+    justify-content: center;
+}
+.graphique{
+    width: 60%;
+    margin-left: 35px;
+}
+#nbDayplus24h , #nbDaymoins24h{
+    display: none;
+    margin: 7px 10px 0 10px;
+}

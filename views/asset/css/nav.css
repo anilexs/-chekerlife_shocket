@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+nav{
+    background-color: #1E222C;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+nav .logo{
+    width: 60px;
+    height: 60px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav .ulNav{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: 10px;
+}
+nav #navRechercherBar{
+    background-color: #303541;
+    color: white;
+    border: none;
+    font-size: 30px;
+    width: 320px;
+}
+.navRechercher{
+    position: relative;
+}
+.rechercherUl{
+    list-style-type: none;
+    background-color: #3D3D3D;
+    width: 100%;
+    position: absolute;
+    top: 32px;
+    z-index: 3;
+}
+.rechercherLi{
+    display: flex;
+}
+.rechercheNavImg{
+    width: 80px;
+    height: 120px;
+    display: block;
+    margin: 5px;
+}
+.navRechercheImg{
+    height: 100px;
+    width: 75px;
+}
+.navRechercheCard{
+    width: 95%;
+    border-radius: 12px;
+    margin: 10px 10px;
+    position: relative;
+}
+.cardA{
+    display: flex;
+    text-align: center;
+}
+.cardA h3{
+    width: 170px;
+    height: 30px;
+    font-size: 14px;
+    margin: 0;
+}
+.likeNavRecherche{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 28px;
+}
+
+nav .likePgae{
+    position: relative;
+}
+nav .nbLike{
+    position: absolute;
+    font-size: 14px;
+    right: 11.5px;
+    top: 9px;
+}
+nav img{
+    width: 100%;
+    height: 100%;
+}
+nav .userImg{
+    width: 30px;
+    height: 30px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+nav .profil{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    background-color: rgb(52, 52, 52);
+    position: relative;
+}
+.menu{
+    background: linear-gradient(to top left, #4800ff, rgb(44, 169, 155));
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+.menu li{
+    list-style-type: none;
+    width: 200px;
+}
+.menu .admin{
+    color: white;
+    text-align: center;
+    width: 200px;
+    padding-top: 5px;
+    border-top: 2px solid black;
+}
+#deconnexion{
+    width: 100%;
+    background-color: transparent;
+    border-top: 2px solid white;
+    color: white;
+    font-size: 30px;
+}
+nav .pseudo{
+    width: 100%;
+    color: white;
+}
+.navCard{
+    width: 200px;
+    height: 300px;
+    border-radius: 12px;
+    margin: 10px 10px;
+    position: relative;
+}
+.like{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 28px;
+}
+.cataLike{
+    position: absolute;
+    color: black;
+    left: 16px;
+    top: 12px;
+    font-size: 14px;
+}
+.activeTrue{
+    color: red;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.activeTrue span{
+    color: white;
+}
+.activeFalse{
+    color: white;
+    background-color: rgba(80, 80, 80, 0.600);
+    border-radius: 50%;
+    height: 40px;
+    padding-top: 5px;
+}
+.saison{
+    color: white;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.500);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px;
+    font-size: 20px;
+    bottom: 10px;
+    right: 5px;
+}
+.type{
+    color: white;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.500);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px;
+    font-size: 20px;
+    top: 10px;
+    left: 5px;
+}
+nav h3{
+    color: white;
+    margin-top: 5px;
+}

@@ -1,0 +1,29 @@
+# activer la regle de reecriture d'url
+# RewriteEngine On
+# rediriger vers le fichier sans l'extention
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^([^/]+)/?$ $1.php [L]
+# on verifie si la requete correspond a un repertoire
+# RewriteCond %{REQUEST_FILENAME} !-d
+# on verifie si la requete correspond a un fichier
+# RewriteCond %{REQUEST_FILENAME} !-f
+
+# rediriger vers le fichier index
+# RewriteRule ^(.*)$ index.php?q=$1 [L]
+
+
+# Activer la règle de réécriture d'URL
+RewriteEngine On
+
+# Rediriger vers le fichier sans l'extension
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# On vérifie si la requête correspond à un répertoire
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# On vérifie si la requête correspond à un fichier
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rediriger vers la page d'erreur (error.php dans cet exemple)
+RewriteRule ^(.*)$ undefined-page.php [L]
